@@ -29,7 +29,7 @@
 		870614782629B386002EEEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8706147B2629B386002EEEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8706147D2629B386002EEEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		870CD6CB2629C12C001812FE /* ResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseViewModel.swift; sourceTree = "<group>"; };
+		870CD6CB2629C12C001812FE /* ResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseViewModel.swift; path = ../ResponseViewModel.swift; sourceTree = "<group>"; };
 		870CD6CF2629C3E9001812FE /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		E1CB55199D3BD53EF9E52C48 /* Pods-BragiTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BragiTestTask.debug.xcconfig"; path = "Target Support Files/Pods-BragiTestTask/Pods-BragiTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,15 +77,23 @@
 			children = (
 				8706146F2629B385002EEEE3 /* AppDelegate.swift */,
 				870614712629B385002EEEE3 /* SceneDelegate.swift */,
-				870614732629B385002EEEE3 /* ViewController.swift */,
-				870CD6CB2629C12C001812FE /* ResponseViewModel.swift */,
-				870CD6CF2629C3E9001812FE /* ResponseModel.swift */,
-				870614752629B385002EEEE3 /* Main.storyboard */,
+				87DFCE4D262DACFA004D9732 /* StepOne */,
 				870614782629B386002EEEE3 /* Assets.xcassets */,
+				870614752629B385002EEEE3 /* Main.storyboard */,
 				8706147A2629B386002EEEE3 /* LaunchScreen.storyboard */,
 				8706147D2629B386002EEEE3 /* Info.plist */,
 			);
 			path = BragiTestTask;
+			sourceTree = "<group>";
+		};
+		87DFCE4D262DACFA004D9732 /* StepOne */ = {
+			isa = PBXGroup;
+			children = (
+				870CD6CF2629C3E9001812FE /* ResponseModel.swift */,
+				870614732629B385002EEEE3 /* ViewController.swift */,
+				870CD6CB2629C12C001812FE /* ResponseViewModel.swift */,
+			);
+			path = StepOne;
 			sourceTree = "<group>";
 		};
 		A5634190163C37BB6E2F8A73 /* Pods */ = {

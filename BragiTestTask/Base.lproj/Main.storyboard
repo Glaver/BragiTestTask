@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jAa-zs-8rQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,16 +8,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Step 2-->
+        <scene sceneID="dOl-OU-GjV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BragiTestTask" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="yhO-Q7-HGm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7bq-3g-ksJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="v9a-WF-1pj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Step 2" id="dnd-XD-Yxl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlj-Nw-JKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1139" y="552"/>
+        </scene>
+        <!--Step 1-->
+        <scene sceneID="VQH-iS-bKy">
+            <objects>
+                <viewController id="K76-r2-qpE" customClass="ViewController" customModule="BragiTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FdP-in-lIc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rc0-UC-kIP">
-                                <rect key="frame" x="150.5" y="419" width="113" height="58.5"/>
+                                <rect key="frame" x="150.5" y="399.5" width="113" height="58.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsu-A6-yKh">
                                         <rect key="frame" x="21" y="0.0" width="71.5" height="20.5"/>
@@ -32,27 +48,45 @@
                                             <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="responseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDp-fn-OXw"/>
+                                            <action selector="responseButton:" destination="K76-r2-qpE" eventType="touchUpInside" id="UeA-cq-ywf"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="i2j-Ab-Has"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rc0-UC-kIP" secondAttribute="bottom" constant="384.5" id="7RW-8x-vpQ"/>
-                            <constraint firstItem="rc0-UC-kIP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CtZ-3E-NkW"/>
-                            <constraint firstItem="rc0-UC-kIP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="375" id="WuA-0c-Z0r"/>
+                            <constraint firstItem="rc0-UC-kIP" firstAttribute="centerY" secondItem="i2j-Ab-Has" secondAttribute="centerY" id="Slv-4t-58k"/>
+                            <constraint firstItem="rc0-UC-kIP" firstAttribute="centerX" secondItem="i2j-Ab-Has" secondAttribute="centerX" id="glL-Av-HfE"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Step 1" id="RBP-6C-dwc"/>
                     <connections>
-                        <outlet property="responseLable" destination="tsu-A6-yKh" id="6Jc-eP-42B"/>
+                        <outlet property="responseLable" destination="tsu-A6-yKh" id="IeZ-u0-xdH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLp-g6-gsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146" y="68"/>
+            <point key="canvasLocation" x="-1139" y="-94"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ubs-eg-3qI">
+            <objects>
+                <tabBarController id="jAa-zs-8rQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jea-kz-hqK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="K76-r2-qpE" kind="relationship" relationship="viewControllers" id="H3N-hh-x8F"/>
+                        <segue destination="yhO-Q7-HGm" kind="relationship" relationship="viewControllers" id="lJn-hy-3d4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TfP-Qb-Wgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2032" y="247"/>
         </scene>
     </scenes>
     <resources>
