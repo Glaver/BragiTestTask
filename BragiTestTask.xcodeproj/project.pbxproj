@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		870614772629B385002EEEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870614752629B385002EEEE3 /* Main.storyboard */; };
 		870614792629B386002EEEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870614782629B386002EEEE3 /* Assets.xcassets */; };
 		8706147C2629B386002EEEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8706147A2629B386002EEEE3 /* LaunchScreen.storyboard */; };
+		870CD6CC2629C12C001812FE /* ResponseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CD6CB2629C12C001812FE /* ResponseViewModel.swift */; };
+		870CD6D02629C3E9001812FE /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CD6CF2629C3E9001812FE /* ResponseModel.swift */; };
+		DBE9F5C61E5FB51416BED187 /* Pods_BragiTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46862E2B2E323B1C152892EA /* Pods_BragiTestTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46862E2B2E323B1C152892EA /* Pods_BragiTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BragiTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EADE494307506EED7D2D585 /* Pods-BragiTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BragiTestTask.release.xcconfig"; path = "Target Support Files/Pods-BragiTestTask/Pods-BragiTestTask.release.xcconfig"; sourceTree = "<group>"; };
 		8706146C2629B385002EEEE3 /* BragiTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BragiTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8706146F2629B385002EEEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		870614712629B385002EEEE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		870614782629B386002EEEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8706147B2629B386002EEEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8706147D2629B386002EEEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870CD6CB2629C12C001812FE /* ResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseViewModel.swift; sourceTree = "<group>"; };
+		870CD6CF2629C3E9001812FE /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		E1CB55199D3BD53EF9E52C48 /* Pods-BragiTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BragiTestTask.debug.xcconfig"; path = "Target Support Files/Pods-BragiTestTask/Pods-BragiTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE9F5C61E5FB51416BED187 /* Pods_BragiTestTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		518F9F6128575E889BFDABAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46862E2B2E323B1C152892EA /* Pods_BragiTestTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		870614632629B385002EEEE3 = {
 			isa = PBXGroup;
 			children = (
 				8706146E2629B385002EEEE3 /* BragiTestTask */,
 				8706146D2629B385002EEEE3 /* Products */,
+				A5634190163C37BB6E2F8A73 /* Pods */,
+				518F9F6128575E889BFDABAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +78,23 @@
 				8706146F2629B385002EEEE3 /* AppDelegate.swift */,
 				870614712629B385002EEEE3 /* SceneDelegate.swift */,
 				870614732629B385002EEEE3 /* ViewController.swift */,
+				870CD6CB2629C12C001812FE /* ResponseViewModel.swift */,
+				870CD6CF2629C3E9001812FE /* ResponseModel.swift */,
 				870614752629B385002EEEE3 /* Main.storyboard */,
 				870614782629B386002EEEE3 /* Assets.xcassets */,
 				8706147A2629B386002EEEE3 /* LaunchScreen.storyboard */,
 				8706147D2629B386002EEEE3 /* Info.plist */,
 			);
 			path = BragiTestTask;
+			sourceTree = "<group>";
+		};
+		A5634190163C37BB6E2F8A73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1CB55199D3BD53EF9E52C48 /* Pods-BragiTestTask.debug.xcconfig */,
+				5EADE494307506EED7D2D585 /* Pods-BragiTestTask.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 870614802629B386002EEEE3 /* Build configuration list for PBXNativeTarget "BragiTestTask" */;
 			buildPhases = (
+				0E716ACEA639AAE11B79FF0C /* [CP] Check Pods Manifest.lock */,
 				870614682629B385002EEEE3 /* Sources */,
 				870614692629B385002EEEE3 /* Frameworks */,
 				8706146A2629B385002EEEE3 /* Resources */,
+				F3047BC85C8E3BE46846A1F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +164,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E716ACEA639AAE11B79FF0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BragiTestTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3047BC85C8E3BE46846A1F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BragiTestTask/Pods-BragiTestTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BragiTestTask/Pods-BragiTestTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BragiTestTask/Pods-BragiTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		870614682629B385002EEEE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				870614742629B385002EEEE3 /* ViewController.swift in Sources */,
+				870CD6CC2629C12C001812FE /* ResponseViewModel.swift in Sources */,
 				870614702629B385002EEEE3 /* AppDelegate.swift in Sources */,
+				870CD6D02629C3E9001812FE /* ResponseModel.swift in Sources */,
 				870614722629B385002EEEE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +359,7 @@
 		};
 		870614812629B386002EEEE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CB55199D3BD53EF9E52C48 /* Pods-BragiTestTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 		};
 		870614822629B386002EEEE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EADE494307506EED7D2D585 /* Pods-BragiTestTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
