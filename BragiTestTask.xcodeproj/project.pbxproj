@@ -15,7 +15,7 @@
 		8706147C2629B386002EEEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8706147A2629B386002EEEE3 /* LaunchScreen.storyboard */; };
 		870CD6CC2629C12C001812FE /* ResponseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CD6CB2629C12C001812FE /* ResponseViewModel.swift */; };
 		870CD6D02629C3E9001812FE /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CD6CF2629C3E9001812FE /* ResponseModel.swift */; };
-		8717307D262DB9CB00904FE0 /* ViewControllerSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717307C262DB9CB00904FE0 /* ViewControllerSequence.swift */; };
+		8717307D262DB9CB00904FE0 /* SequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8717307C262DB9CB00904FE0 /* SequenceViewController.swift */; };
 		DBE9F5C61E5FB51416BED187 /* Pods_BragiTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46862E2B2E323B1C152892EA /* Pods_BragiTestTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		8706147D2629B386002EEEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		870CD6CB2629C12C001812FE /* ResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseViewModel.swift; path = ../ResponseViewModel.swift; sourceTree = "<group>"; };
 		870CD6CF2629C3E9001812FE /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
-		8717307C262DB9CB00904FE0 /* ViewControllerSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSequence.swift; sourceTree = "<group>"; };
+		8717307C262DB9CB00904FE0 /* SequenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceViewController.swift; sourceTree = "<group>"; };
 		E1CB55199D3BD53EF9E52C48 /* Pods-BragiTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BragiTestTask.debug.xcconfig"; path = "Target Support Files/Pods-BragiTestTask/Pods-BragiTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,7 @@
 		8717307B262DB96100904FE0 /* StepTwo */ = {
 			isa = PBXGroup;
 			children = (
-				8717307C262DB9CB00904FE0 /* ViewControllerSequence.swift */,
+				8717307C262DB9CB00904FE0 /* SequenceViewController.swift */,
 			);
 			path = StepTwo;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 				870614742629B385002EEEE3 /* ViewController.swift in Sources */,
 				870CD6CC2629C12C001812FE /* ResponseViewModel.swift in Sources */,
 				870614702629B385002EEEE3 /* AppDelegate.swift in Sources */,
-				8717307D262DB9CB00904FE0 /* ViewControllerSequence.swift in Sources */,
+				8717307D262DB9CB00904FE0 /* SequenceViewController.swift in Sources */,
 				870CD6D02629C3E9001812FE /* ResponseModel.swift in Sources */,
 				870614722629B385002EEEE3 /* SceneDelegate.swift in Sources */,
 			);

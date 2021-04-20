@@ -18,9 +18,9 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
-    
+
     let responseViewModel = ResponseViewModel()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         makeRoundedButton()

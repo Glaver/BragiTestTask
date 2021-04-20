@@ -8,8 +8,8 @@
 import UIKit
 import RxSwift
 
-class ViewControllerSequence: UIViewController {
-    @IBOutlet weak var responseButtonOutlet: UIButton!
+class SequenceViewController: UIViewController {
+    @IBOutlet weak var simulateButtonOutlet: UIButton!
     @IBAction func simulateButton(_ sender: UIButton) {
         createSequence(for: createArray())
     }
@@ -22,7 +22,6 @@ class ViewControllerSequence: UIViewController {
     func createArray() -> [Int] {
         return Array(1...50)
     }
-
     func createSequence(for array: [Int]) {
         let publishSubject = PublishSubject<Int>()
         var delay = 0
@@ -39,9 +38,8 @@ class ViewControllerSequence: UIViewController {
                 publishSubject.onNext(int)
             })
     }
-
     func makeRoundedButton() {
-        responseButtonOutlet.layer.cornerRadius = 10
-        responseButtonOutlet.clipsToBounds = true
+        simulateButtonOutlet.layer.cornerRadius = 10
+        simulateButtonOutlet.clipsToBounds = true
     }
 }

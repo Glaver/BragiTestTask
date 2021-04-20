@@ -11,7 +11,7 @@
         <!--Step 2-->
         <scene sceneID="dOl-OU-GjV">
             <objects>
-                <viewController id="yhO-Q7-HGm" customClass="ViewControllerSequence" customModule="BragiTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yhO-Q7-HGm" customClass="SequenceViewController" customModule="BragiTestTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7bq-3g-ksJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,9 +39,9 @@
                             <constraint firstItem="i0r-De-8SO" firstAttribute="centerY" secondItem="v9a-WF-1pj" secondAttribute="centerY" id="edb-gk-Acn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Step 2" selectedImage="2.circle.fill" catalog="system" id="dnd-XD-Yxl"/>
+                    <tabBarItem key="tabBarItem" title="Step 2" image="2.circle.fill" selectedImage="2.circle" catalog="system" id="dnd-XD-Yxl"/>
                     <connections>
-                        <outlet property="responseButtonOutlet" destination="Qcd-1c-vo0" id="68Z-dw-bcr"/>
+                        <outlet property="simulateButtonOutlet" destination="Qcd-1c-vo0" id="68Z-dw-bcr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlj-Nw-JKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -85,7 +85,7 @@
                             <constraint firstItem="rc0-UC-kIP" firstAttribute="centerX" secondItem="i2j-Ab-Has" secondAttribute="centerX" id="glL-Av-HfE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Step 1" selectedImage="1.circle.fill" catalog="system" id="RBP-6C-dwc"/>
+                    <tabBarItem key="tabBarItem" title="Step 1" image="1.circle.fill" catalog="system" selectedImage="1.circle" id="RBP-6C-dwc"/>
                     <connections>
                         <outlet property="responseButtonOutlet" destination="fYH-fr-C1p" id="ger-xj-3CT"/>
                         <outlet property="responseLable" destination="tsu-A6-yKh" id="IeZ-u0-xdH"/>
@@ -115,8 +115,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.circle" catalog="system" width="128" height="121"/>
         <image name="1.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="2.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="2.circle" catalog="system" width="128" height="121"/>
+        <image name="2.circle.fill" width="128" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
