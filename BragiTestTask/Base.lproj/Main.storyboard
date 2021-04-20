@@ -11,14 +11,38 @@
         <!--Step 2-->
         <scene sceneID="dOl-OU-GjV">
             <objects>
-                <viewController id="yhO-Q7-HGm" sceneMemberID="viewController">
+                <viewController id="yhO-Q7-HGm" customClass="ViewControllerSequence" customModule="BragiTestTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7bq-3g-ksJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i0r-De-8SO">
+                                <rect key="frame" x="148" y="413.5" width="118" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-1c-vo0">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Simulate a queue">
+                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="simulateButton:" destination="yhO-Q7-HGm" eventType="touchUpInside" id="dNg-Jk-QuE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="v9a-WF-1pj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i0r-De-8SO" firstAttribute="centerX" secondItem="v9a-WF-1pj" secondAttribute="centerX" id="HXH-fc-2KQ"/>
+                            <constraint firstItem="i0r-De-8SO" firstAttribute="centerY" secondItem="v9a-WF-1pj" secondAttribute="centerY" id="edb-gk-Acn"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Step 2" id="dnd-XD-Yxl"/>
+                    <tabBarItem key="tabBarItem" title="Step 2" selectedImage="2.circle.fill" catalog="system" id="dnd-XD-Yxl"/>
+                    <connections>
+                        <outlet property="responseButtonOutlet" destination="Qcd-1c-vo0" id="68Z-dw-bcr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlj-Nw-JKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,8 +85,9 @@
                             <constraint firstItem="rc0-UC-kIP" firstAttribute="centerX" secondItem="i2j-Ab-Has" secondAttribute="centerX" id="glL-Av-HfE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Step 1" id="RBP-6C-dwc"/>
+                    <tabBarItem key="tabBarItem" title="Step 1" selectedImage="1.circle.fill" catalog="system" id="RBP-6C-dwc"/>
                     <connections>
+                        <outlet property="responseButtonOutlet" destination="fYH-fr-C1p" id="ger-xj-3CT"/>
                         <outlet property="responseLable" destination="tsu-A6-yKh" id="IeZ-u0-xdH"/>
                     </connections>
                 </viewController>
@@ -90,6 +115,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="2.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -98,6 +125,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
